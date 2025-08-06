@@ -11,16 +11,16 @@ Component.prototype.create = function () {
 const header = new Component(
   'header',
   `
-  <h1>Lost Multiverse - Início</h1>
+  <h1>Lost Multiverse</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="nav/about.html">Sobre Mim</a></li>
-        <li><a href="nav/hability.html">Habilidades</a></li>
-        <li><a href="nav/certification.html">Certificados</a></li>
-        <li><a href="nav/projects.html">Projetos</a></li>
-        <li><a href="nav/services.html">Serviços</a></li>
-        <li><a href="nav/contact.html">Contato</a></li>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="/nav/about.html">Sobre Mim</a></li>
+        <li><a href="/nav/hability.html">Habilidades</a></li>
+        <li><a href="/nav/certification.html">Certificados</a></li>
+        <li><a href="/nav/projects.html">Projetos</a></li>
+        <li><a href="/nav/services.html">Serviços</a></li>
+        <li><a href="/nav/contact.html">Contato</a></li>
       </ul>
     </nav>
   `
@@ -33,13 +33,13 @@ const footer = new Component(
     <div id="footer-nav">
       <h4>Navegação rápida entre seções</h4>
         <ul>
-          <li><a href="">Início</a></li>
-          <li><a href="">Sobre Mim</a></li>
-          <li><a href="">Habilidades</a></li>
-          <li><a href="">Certificados</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Serviços</a></li>
-          <li><a href="">Contato</a></li>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="nav/about.html">Sobre Mim</a></li>
+          <li><a href="nav/hability.html">Habilidades</a></li>
+          <li><a href="nav/certification.html">Certificados</a></li>
+          <li><a href="nav/projects.html">Projetos</a></li>
+          <li><a href="nav/services.html">Serviços</a></li>
+          <li><a href="nav/contact.html">Contato</a></li>
         </ul>
       </div>
     </div>
