@@ -14,7 +14,7 @@ const header = new Component(
   <h1>Lost Multiverse</h1>
     <nav>
       <ul>
-        <li><a href="../index.html">Início</a></li>
+        <li><a href="index.html">Início</a></li>
         <li><a href="/nav/about.html">Sobre Mim</a></li>
         <li><a href="/nav/hability.html">Habilidades</a></li>
         <li><a href="/nav/certification.html">Certificados</a></li>
