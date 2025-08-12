@@ -108,7 +108,18 @@ header:hover {
 }
 
 #hamburguer-content.no-active a {
-  display: none;
+  animation: aElAnim ease-in-out 0.5s;
+}
+
+@keyframes aElAnim {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 #hamburguer:hover .hamburguer-line {
