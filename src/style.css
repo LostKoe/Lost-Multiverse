@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: #0d1117;
+  --secondary-bg: #1d2126;
+  --white: #e6edf3;
+  --highlighted: #1f6feb;
+  --highlighted2: #00b4d8;
+  --gray: #8b949e;
+  --transparent-bg: rgba(29, 33, 38, 0.7);
+  --glass: linear-gradient(
+    to bottom right,
+    var(--transparent-bg),
+    var(--highlighted2),
+    var(--transparent-bg)
+  );
+  --quicksand: 'Quicksand', sans-serif;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--white);
+  font-family: var(--quicksand);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.container:first-child {
+  position: sticky;
+  top: 25px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+/* #region Header & Navbar */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px 20px;
+  border-radius: 30px;
+  border: 2px solid var(--highlighted);
+  box-shadow: 0 0 50px -20px var(--white);
+  transition: all 0.7s;
+}
+
+header:hover {
+  box-shadow: 0 0 50px -10px var(--white);
+  transform: scale(1.05);
+}
+
+/* #region Menu hamburguer */
+#hamburguer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.hamburguer-line {
+  width: 30px;
+  height: 3px;
+  background: var(--highlighted);
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#hamburguer-content {
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  appearance: hidden;
+  position: fixed;
+  transform: translateY(15px);
+  top: 125px;
+  gap: 25px;
+  background: var(--secondary-bg);
+  padding: 20px 50px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px -10px var(--white);
+  transition: all 0.5s;
+}
+
+#hamburguer-content.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#hamburguer-content.no-active {
+  opacity: 0;
+  appearance: hidden;
+  transform: translateY(15px);
+}
+
+#hamburguer:hover .hamburguer-line {
+  background: var(--highlighted2);
+}
+/* #endregion */
+/* #endregion */
+
+.glass {
+  background: var(--glass);
+  background-size: 400% 400%;
+  background-position: 0% 0%;
+  backdrop-filter: blur(5px);
+  transition: all 0.7s;
+}
+
+.glass:hover {
+  background-position: 100% 100%;
+}
+
+.highlighted {
+  background: linear-gradient(
+    to left,
+    var(--highlighted),
+    var(--highlighted2),
+    var(--highlighted)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+a.highlighted {
+  font-weight: bold;
+}

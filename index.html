@@ -3,96 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lost Multiverse - Início</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
+    <title>LostKoe</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="shortcut icon" href="src/assets/icon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <header></header>
-    <main style="padding-top: 0;">
-      <section id="hero">
-        <h2>Olá, sou LostKoe</h2>
-        <p>
-          Desenvolvedor Web em formação seguindo seu caminho para ser Full-Stack
-        </p>
-        <div id="hero-btn-container">
-          <a href="">
-            <button>Ver projetos</button>
-          </a>
-          <a href="">
-            <button>Contato</button>
-          </a>
+    <!-- #region Header com efeito de vidro -->
+    <div class="container">
+      <header class="glass">
+        <h1>LostKoe</h1>
+        <div id="hamburguer">
+          <span class="hamburguer-line"></span
+          ><span class="hamburguer-line"></span
+          ><span class="hamburguer-line"></span>
         </div>
-      </section>
-      <section id="about-sects">
-        <h3>O que vai falar em cada seção</h3>
-        <div class="container">
-          <div class="about-sects-blocks">
-            <h4>Sobre Mim</h4>
-            <p>
-              Conheça um pouco da minha trajetória, meus interesses e o que me
-              motivou a entrar no mundo do desenvolvimento web.
-            </p>
-            <a href="nav/about.html"><button>Acessar</button></a>
-          </div>
+      </header>
+      <div id="hamburguer-content" class="no-active">
+        <p class="hamburguer-options"><a href="" class="highlighted">Início</a></p>
+        <p class="hamburguer-options"><a href="" class="highlighted">Sobre Mim</a></p>
+        <p class="hamburguer-options"><a href="" class="highlighted">Habilidades</a></p>
+        <p class="hamburguer-options"><a href="" class="highlighted">Projetos</a></p>
+        <p class="hamburguer-options"><a href="" class="highlighted">Serviços</a></p>
+        <p class="hamburguer-options"><a href="" class="highlighted">Contato</a></p>
+      </div>
+    </div>
+    <!-- #endregion -->
 
-          <div class="about-sects-blocks">
-            <h4>Habilidades</h4>
-            <p>
-              Veja as linguagens e ferramentas que estou aprendendo, e como
-              estou me desenvolvendo como futuro programador Full-Stack.
-            </p>
-            <a href="nav/hability.html"><button>Acessar</button></a>
-          </div>
-
-          <div class="about-sects-blocks">
-            <h4>Certificados</h4>
-            <p>
-              Aqui estão os certificados que conquistei em cursos e jornadas,
-              provando meu esforço e dedicação nos estudos técnicos.
-            </p>
-            <a href="nav/certification.html"><button>Acessar</button></a>
-          </div>
-
-          <div class="about-sects-blocks">
-            <h4>Serviços</h4>
-            <p>
-              Nesta seção, eu falarei do que eu posso fazer para você, então se
-              quiser que eu te faça algo, fale comigo.
-            </p>
-            <a href="nav/services.html"><button>Acessar</button></a>
-          </div>
-
-          <div class="about-sects-blocks">
-            <h4>Projetos</h4>
-            <p>
-              Confira os projetos que já desenvolvi, desde ideias simples até
-              desafios criativos com HTML, CSS e JavaScript.
-            </p>
-            <a href="nav/projects.html"><button>Acessar</button></a>
-          </div>
-
-          <div class="about-sects-blocks">
-            <h4>Contato</h4>
-            <p>
-              Fale comigo por um dos meios que vou citar nessa seção, e fale
-              comigo seja para criar algo para você ou só conversar mesmo.
-            </p>
-            <a href="nav/contact.html"><button>Acessar</button></a>
-          </div>
-        </div>
-      </section>
-      <section id="news">
-        <h3>Atualizações e novidades</h3>
-        <p>Em breve...</p>
-      </section>
+    <!-- #region Conteúdo principal com todas as seções -->
+    <main>
+      <section id="hero"></section>
+      <section id="about-me"></section>
+      <section id="habilities"></section>
+      <section id="projects"></section>
+      <section id="services"></section>
+      <section id="contact"></section>
     </main>
-    <footer></footer>
+    <!-- #endregion -->
 
-    <script src="script.js"></script>
-    <script>
-      header.create()
-      footer.create()
-    </script>
+    <script src="src/script.js"></script>
   </body>
 </html>
