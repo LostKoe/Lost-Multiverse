@@ -29,6 +29,11 @@ body {
   font-family: var(--quicksand);
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -36,24 +41,20 @@ body {
   padding: 0 50px;
 }
 
-.container:first-child {
-  position: sticky;
-  top: 25px;
-  margin-bottom: 50px;
-  margin-top: 20px;
-}
-
 /* #region Header & Navbar */
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  top: 25px;
   width: 100%;
   max-width: 1100px;
   padding: 20px 20px;
   border-radius: 30px;
   border: 2px solid var(--highlighted);
   box-shadow: 0 0 50px -20px var(--white);
+  z-index: 1;
   transition: all 0.7s;
 }
 
@@ -96,19 +97,22 @@ header:hover {
 }
 
 #hamburguer-content.active {
+  pointer-events: auto;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
 #hamburguer-content.no-active {
+  pointer-events: none;
+  visibility: hidden;
   opacity: 0;
   appearance: hidden;
   transform: translateY(15px);
 }
 
 #hamburguer-content.no-active a {
-  animation: aElAnim ease-in-out 0.5s;
+  animation: aElAnim ease-in-out 0.5s infinite;
 }
 
 @keyframes aElAnim {
@@ -118,7 +122,6 @@ header:hover {
   }
   100% {
     opacity: 0;
-    display: none;
   }
 }
 
@@ -151,8 +154,81 @@ header:hover {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+  font-weight: 1000;
 }
 
-a.highlighted {
+main {
+  margin-top: 100px;
+}
+
+section {
+  min-height: calc(100vh - 83px);
+}
+
+#hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+  line-height: 1.5;
+}
+
+#hero-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  background: var(--secondary-bg);
+  color: var(--white);
   font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  filter: drop-shadow(0 5px 0 var(--highlighted));
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: translateY(1px);
+  filter: drop-shadow(0 4px 0 var(--highlighted));
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(4px);
+  filter: drop-shadow(0 1px 0 var(--highlighted));
+}
+
+#hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-right i {
+  font-size: 200px;
+  color: var(--highlighted2);
+  animation: moveIcon 2s ease-in-out infinite;
+}
+
+@keyframes moveIcon {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
