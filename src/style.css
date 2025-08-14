@@ -240,7 +240,7 @@ button:active {
     text-align: center;
   }
 
-  #hero-right i {
+  #hero-right {
     display: none;
   }
 }
