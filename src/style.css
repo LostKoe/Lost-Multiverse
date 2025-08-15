@@ -240,9 +240,6 @@ button:active {
     text-align: center;
   }
 
-  #hero-right {
-    display: none;
-  }
 }
 
 
@@ -250,6 +247,10 @@ button:active {
   header {
     min-width: 275px;
     max-width: 650px;
+  }
+  
+  #hero-right {
+    display: none;
   }
 }
 
