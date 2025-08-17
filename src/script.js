@@ -15,7 +15,7 @@ const habilitiesTexts = [
   'Linguagem de estilo para o HTML, como o próprio nome diz, dá uma aparência melhor ao conteúdo. Meu possível nível: Iniciante-Intermediário.',
   'Linguagem de programação para dar a interatividade em páginas da web, como cliques em botões. Meu possível nível: Iniciante.',
   'Permite "viajar" entre versões do código, sendo ela a melhor maneira de fazer alterações em sites. Meu possível nível: Iniciante.',
-  'Framework JavaScript progressivo que serve para criar interfaces de usuário e aplicações web de forma eficiente. Meu possível nível: Iniciante.',
+  'Framework JavaScript progressivo que serve para criar interfaces de usuário e aplicações web de forma eficiente. Meu possível nível: Zero conhecimento.',
 ]
 
 const defaultText = 'Passe o mouse sobre uma habilidade para ver a descrição.'
