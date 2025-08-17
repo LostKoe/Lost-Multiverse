@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- #region Header com efeito de vidro -->
@@ -30,16 +32,16 @@
           <a href="#about-me" class="highlighted">Sobre Mim</a>
         </p>
         <p class="hamburguer-options">
-          <a href="" class="highlighted">Habilidades</a>
+          <a href="#habilities" class="highlighted">Habilidades</a>
         </p>
         <p class="hamburguer-options">
-          <a href="" class="highlighted">Projetos</a>
+          <a href="#projects" class="highlighted">Projetos</a>
         </p>
         <p class="hamburguer-options">
-          <a href="" class="highlighted">Serviços</a>
+          <a href="#services" class="highlighted">Serviços</a>
         </p>
         <p class="hamburguer-options">
-          <a href="" class="highlighted">Contato</a>
+          <a href="#contact" class="highlighted">Contato</a>
         </p>
       </div>
     </div>
@@ -48,7 +50,7 @@
     <!-- #region Conteúdo principal com todas as seções -->
     <main>
       <section id="hero">
-        <div id="hero-left">
+        <div id="hero-left" data-aos="fade-right">
           <h2 class="highlighted">
             Transformando ideias reais em algo incrível
           </h2>
@@ -63,28 +65,94 @@
             <a href=""><button type="button">Fale comigo</button></a>
           </div>
         </div>
-        <div id="hero-right">
+        <div id="hero-right" data-aos="fade-left">
           <i class="fa-solid fa-cubes"></i>
         </div>
       </section>
-      <section id="about-me">
+      <section id="about-me" data-aos="fade-up">
         <h3>Sobre Mim</h3>
         <div class="glass">
           <div id="about-left">
-            <img src="src/assets/Waguri Kaoruko.jpg" alt="Foto de perfil do LostKoe">
+            <img
+              src="src/assets/Waguri Kaoruko.jpg"
+              alt="Foto de perfil do LostKoe"
+            />
           </div>
           <div id="about-right">
-            <p><span class="highlighted">Quem eu sou: </span>Sou LostKoe, um programador iniciante trilhando o caminho para me tornar um desenvolvedor Full-Stack. No momento, estou focado no Front-End, onde posso transformar ideias em interfaces únicas e funcionais.</p>
-            <p><span class="highlighted">Minha história: </span>Tudo começou quando eu procurava um curso para melhorar em Matemática e Português, e foi aí que encontrei a Khan Academy. Lá, descobri um curso de programação. Sem saber exatamente o que era, decidi ver o que era. Desde então, fiquei mais e mais animado em aprender mais sobre programação.</p>
-            <p><span class="highlighted">O que me motiva: </span>Ver pessoas criando coisas incríveis e úteis com programação me inspira a fazer o mesmo. Saber que posso usar tecnologia para impactar positivamente a vida de alguém é o que me move.</p>
-            <p><span class="highlighted">Qual o meu objetivo: </span>Quero ajudar pessoas de diferentes formas usando programação. Um dos meus maiores sonhos é criar soluções que contribuam para a saúde mental (como ferramentas para lidar com depressão e ansiedade) e também compartilhar conhecimento, ajudando outros a aprenderem o que eu já sei.</p>
+            <p>
+              <span class="highlighted">Quem eu sou: </span>Sou LostKoe, um
+              programador iniciante trilhando o caminho para me tornar um
+              desenvolvedor Full-Stack. No momento, estou focado no Front-End,
+              onde posso transformar ideias em interfaces únicas e funcionais.
+            </p>
+            <p>
+              <span class="highlighted">Minha história: </span>Tudo começou
+              quando eu procurava um curso para melhorar em Matemática e
+              Português, e foi aí que encontrei a Khan Academy. Lá, descobri um
+              curso de programação. Sem saber exatamente o que era, decidi ver o
+              que era. Desde então, fiquei mais e mais animado em aprender mais
+              sobre programação.
+            </p>
+            <p>
+              <span class="highlighted">O que me motiva: </span>Ver pessoas
+              criando coisas incríveis e úteis com programação me inspira a
+              fazer o mesmo. Saber que posso usar tecnologia para impactar
+              positivamente a vida de alguém é o que me move.
+            </p>
+            <p>
+              <span class="highlighted">Qual o meu objetivo: </span>Quero ajudar
+              pessoas de diferentes formas usando programação. Um dos meus
+              maiores sonhos é criar soluções que contribuam para a saúde mental
+              (como ferramentas para lidar com depressão e ansiedade) e também
+              compartilhar conhecimento, ajudando outros a aprenderem o que eu
+              já sei.
+            </p>
           </div>
         </div>
       </section>
-      <section id="habilities"></section>
-      <section id="projects"></section>
-      <section id="services"></section>
-      <section id="contact"></section>
+      <section id="habilities" data-aos="fade-right">
+        <h3>Habilidades</h3>
+        <div id="habilities-main-block">
+          <div id="hability-desc-block">
+            <h4>Descrição</h4>
+            <p id="hability-desc"></p>
+          </div>
+          <div id="habilities-block">
+            <div class="glass hability">
+              <i class="fa-brands fa-html5"></i>
+              <h4>HTML</h4>
+            </div>
+            <div class="hability glass">
+              <i class="fa-brands fa-css3"></i>
+              <h4>CSS</h4>
+            </div>
+            <div class="hability glass">
+              <i class="fa-brands fa-js"></i>
+              <h4>JavaScript</h4>
+            </div>
+            <div class="hability glass">
+              <i class="fa-brands fa-git-alt"></i>
+              <h4>Git</h4>
+            </div>
+            <div class="hability glass">
+              <i class="fa-brands fa-vuejs"></i>
+              <h4>Vue.js</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" data-aos="zoom-in">
+        <h3>Projetos</h3>
+        <p>Em breve...</p>
+      </section>
+      <section id="services" data-aos="fade-down">
+        <h3>Serviços</h3>
+        <p>Em breve...</p>
+      </section>
+      <section id="contact" data-aos="zoom-in">
+        <h3>Contato</h3>
+        <p>Em breve...</p>
+      </section>
     </main>
     <!-- #endregion -->
 
