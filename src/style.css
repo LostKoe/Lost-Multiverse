@@ -489,6 +489,35 @@ i.fa-globe {
   margin-top: 35px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--secondary-bg);
+  padding: 50px;
+  text-align: center;
+  /* border-top: 1px solid var(--white); */
+  box-shadow: 0 0px 20px -10px var(--white);
+}
+
+footer * {
+  width: 300px;
+  margin: 10px 0;
+}
+
+footer a {
+  color: var(--highlighted);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  color: var(--highlighted2);
+  text-decoration: underline;
+}
+
 @media (max-width: 426px) {
   #hero {
     text-align: center;
