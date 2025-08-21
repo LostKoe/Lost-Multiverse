@@ -147,6 +147,7 @@ main {
 section {
   min-height: calc(50vh - 83px);
   margin: 100px 0;
+  text-align: center;
 }
 
 #hero {
@@ -225,6 +226,10 @@ button:active {
   align-items: center;
   flex-direction: column;
   padding: 20px 100px;
+}
+
+#about-me .glass {
+  text-align: left;
 }
 
 #about-me .glass {
@@ -434,6 +439,56 @@ i.fa-globe {
   font-size: 15px;
 }
 
+#contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-bg);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.contacts:hover {
+  border: 2px solid var(--highlighted);
+}
+
+.contacts a {
+  color: var(--highlighted2);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.contacts a:hover h4 {
+  color: var(--white);
+  text-shadow: 0 0 5px var(--white);
+}
+
+.contacts h4 {
+  margin-bottom: 0;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+
+.contacts i {
+  font-size: 35px;
+}
+
+#contact p:last-child {
+  margin-top: 35px;
+}
+
 @media (max-width: 426px) {
   #hero {
     text-align: center;
@@ -452,6 +507,7 @@ i.fa-globe {
 
   #about-me .glass {
     flex-direction: column;
+    text-align: center;
   }
 
   #about-left img {
