@@ -20,8 +20,7 @@ O [Portfólio-LostKoe](https://lostkoe.github.io/Portfolio-LostKoe/) foi feito p
 2. [Sobre Mim](https://lostkoe.github.io/Portfolio-LostKoe/#about-me) - Falando mais sobre minha história
 3. [Habilidades](https://lostkoe.github.io/Portfolio-LostKoe/#habilities) - O que eu já sei e quero aprender
 4. [Projetos](https://lostkoe.github.io/Portfolio-LostKoe/#projects) - Todos os sites que eu já fiz
-5. [Serviços](https://lostkoe.github.io/Portfolio-LostKoe/#services) - O que posso fazer para você
-6. [Contato](https://lostkoe.github.io/Portfolio-LostKoe/#contact) - Para falar comigo
+5. [Contato](https://lostkoe.github.io/Portfolio-LostKoe/#contact) - Para falar comigo
 
 ## Como acessar
 
